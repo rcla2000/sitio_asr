@@ -1,0 +1,70 @@
+:root {
+    --azul: #054b9a;
+    --rojo: #a7073f;
+    --amarillo: #eac21e;
+    --blanco: #FEFCFB;
+}
+
+body {
+    background-color: var(--azul) !important;
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+    color: var(--blanco) !important;
+}
+
+.carnet {
+    border-radius: 16px;
+    border: solid 4px var(--rojo);
+    width: 150px;
+}
+
+.barcelona {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 3rem;
+}
+
+.barcelona .separador {
+    width: 4px;
+    height: 250px;
+    background-color: var(--rojo);
+}
+
+.barcelona img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+    border: solid 4px var(--amarillo);
+}
+
+.fcb {
+    font-size: 1.6rem;
+    color: var(--amarillo) !important;
+}
+
+.nombre {
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .barcelona img {
+        max-width: 150px;
+    }
+
+    .barcelona {
+        justify-content: center;
+    }
+
+    .barcelona .separador {
+        margin: 0 1rem;
+    }
+
+    .fcb {
+        text-align: right;
+    }
+}
